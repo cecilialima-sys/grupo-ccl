@@ -1,0 +1,25 @@
+<svg width="420" height="220" viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cclBlue" x1="34" y1="42" x2="336" y2="186" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A48AA"/>
+      <stop offset="1" stop-color="#2AA4F4"/>
+    </linearGradient>
+    <linearGradient id="accentBlue" x1="0" y1="0" x2="112" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A48AA"/>
+      <stop offset="1" stop-color="#3BB5FF"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(16 18)">
+    <path d="M0 70H70L60 96H0L10 70Z" fill="url(#accentBlue)"/>
+    <path d="M6 102H66L56 128H0L6 102Z" fill="url(#accentBlue)" opacity="0.92"/>
+    <path d="M320 70H388L378 96H318L320 70Z" fill="url(#accentBlue)"/>
+    <path d="M322 102H382L374 128H316L322 102Z" fill="url(#accentBlue)" opacity="0.92"/>
+
+    <path d="M92 128C61 128 38 110 38 82C38 47 67 20 116 20C142 20 165 28 182 43L157 68C146 59 133 54 118 54C93 54 78 67 78 84C78 98 90 108 109 108C124 108 136 104 149 96L170 122C151 134 125 140 92 128Z" fill="url(#cclBlue)"/>
+    <path d="M228 20H276L245 128H197C160 128 143 108 152 74C162 36 190 20 228 20ZM217 54C202 54 192 62 188 77C184 93 191 100 208 100H219L232 54H217Z" fill="url(#cclBlue)"/>
+    <path d="M292 20H339L317 100H396L383 128H256L292 20Z" fill="url(#cclBlue)"/>
+
+    <path d="M41 182L49 154H102C121 154 130 160 126 173C122 186 111 192 91 192H41ZM118 154H165C192 154 204 165 199 182C194 198 178 208 151 208H100L118 154ZM209 154H299L292 176H248L245 184H286L280 204H190L209 154ZM308 154H396L389 176H344L341 184H383L377 204H289L308 154Z" fill="#0A48AA"/>
+  </g>
+</svg>

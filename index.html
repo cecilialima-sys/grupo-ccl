@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Grupo CCL Manutenções - locação e manutenção de plataformas elevatórias com segurança, eficiência e suporte técnico especializado."
+  >
+  <title>Grupo CCL Manutenções</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho fixo com navegação principal -->
+  <header class="site-header" id="inicio">
+    <div class="top-rail">
+      <div class="top-rail__content container">
+        <span class="top-rail__label">Atendimento especializado em plataformas elevatórias</span>
+
+        <!-- Mini plataforma elevatória animada que acompanha o cursor -->
+        <div class="lift-track" aria-hidden="true">
+          <div class="mini-lift" id="miniLift">
+            <span class="mini-lift__mast"></span>
+            <span class="mini-lift__cab"></span>
+            <span class="mini-lift__wheel mini-lift__wheel--left"></span>
+            <span class="mini-lift__wheel mini-lift__wheel--right"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="container navbar__content">
+        <a href="#inicio" class="brand" aria-label="Página inicial Grupo CCL Manutenções">
+          <img class="brand__logo" src="images/logo-ccl-final.png" alt="Logo Grupo CCL Plataformas">
+          <span class="brand__text">
+            <strong>Grupo CCL Manutenções</strong>
+            <small>Locação, manutenção e peças</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mainNav" aria-label="Navegação principal">
+          <a href="#inicio" data-lift-stop="inicio">Início</a>
+          <a href="#sobre" data-lift-stop="sobre">Sobre a empresa</a>
+          <a href="#servicos" data-lift-stop="servicos">Serviços</a>
+          <a href="#equipamentos" data-lift-stop="equipamentos">Equipamentos</a>
+          <a href="#manutencao" data-lift-stop="manutencao">Manutenção</a>
+          <a href="#contato" data-lift-stop="contato">Contato</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção principal com destaque para a proposta da empresa -->
+    <section class="hero">
+      <div class="hero__backdrop"></div>
+      <div class="container hero__content">
+        <div class="hero__text">
+          <span class="section-tag">Locação e assistência técnica</span>
+          <h1>Locação e Manutenção de Plataformas Elevatórias com Segurança e Qualidade</h1>
+          <p>
+            Soluções completas para obras, indústrias, centros logísticos e operações em altura,
+            com agilidade no atendimento, equipamentos confiáveis e suporte técnico especializado.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contato">Solicitar Orçamento</a>
+            <a class="btn btn--secondary" href="#equipamentos">Ver Equipamentos</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero-card">
+            <svg
+              class="hero-machine"
+              id="heroMachine"
+              viewBox="0 0 960 720"
+              role="img"
+              aria-label="Ilustração de plataforma elevatória industrial com braço articulado interativo"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="960" height="720" rx="48" fill="url(#heroBg)"/>
+              <circle cx="760" cy="120" r="88" fill="#39B8FF" fill-opacity="0.18"/>
+              <circle cx="160" cy="580" r="140" fill="#FFFFFF" fill-opacity="0.08"/>
+              <rect x="82" y="560" width="796" height="28" rx="14" fill="#2E343B"/>
+              <g>
+                <rect x="185" y="506" width="244" height="34" rx="17" fill="url(#heroMachineOrange)"/>
+                <rect x="220" y="476" width="74" height="40" rx="8" fill="#3D434A"/>
+                <rect x="318" y="476" width="74" height="40" rx="8" fill="#3D434A"/>
+                <circle cx="246" cy="564" r="34" fill="#1A1D21"/>
+                <circle cx="246" cy="564" r="16" fill="#8D949C"/>
+                <circle cx="388" cy="564" r="34" fill="#1A1D21"/>
+                <circle cx="388" cy="564" r="16" fill="#8D949C"/>
+                <circle cx="430" cy="500" r="17" fill="#FF8B1F"/>
+                <circle cx="430" cy="500" r="8" fill="#FFE6C7"/>
+              </g>
+              <g class="hero-machine__lower" id="heroMachineLower">
+                <path d="M312 500L458 376" stroke="url(#heroMachineOrange)" stroke-width="20" stroke-linecap="round"/>
+                <path d="M396 500L500 388" stroke="url(#heroMachineOrange)" stroke-width="20" stroke-linecap="round"/>
+                <g class="hero-machine__upper" id="heroMachineUpper">
+                  <path d="M458 376L600 282" stroke="url(#heroMachineOrange)" stroke-width="20" stroke-linecap="round"/>
+                  <rect x="472" y="264" width="166" height="28" rx="10" fill="url(#heroMachineOrange)"/>
+                  <rect x="548" y="292" width="16" height="214" rx="8" fill="#B0B5BC"/>
+                </g>
+              </g>
+              <rect x="672" y="190" width="118" height="240" rx="24" fill="#23282E" fill-opacity="0.72"/>
+              <path d="M706 236H756" stroke="#39B8FF" stroke-width="14" stroke-linecap="round"/>
+              <path d="M706 282H756" stroke="#39B8FF" stroke-width="14" stroke-linecap="round"/>
+              <path d="M706 328H736" stroke="#39B8FF" stroke-width="14" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="heroBg" x1="100" y1="52" x2="828" y2="648" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#1A2744"/>
+                  <stop offset="1" stop-color="#0A1222"/>
+                </linearGradient>
+                <linearGradient id="heroMachineOrange" x1="218" y1="274" x2="639" y2="519" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFB347"/>
+                  <stop offset="1" stop-color="#F26A00"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="hero-card__badge">
+              <strong>Atendimento ágil</strong>
+              <span>Equipe pronta para locação, manutenção e suporte técnico.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção institucional -->
+    <section class="section about" id="sobre">
+      <div class="container about__grid">
+        <div>
+          <span class="section-tag">Sobre a empresa</span>
+          <h2>Estrutura, segurança e suporte para operações em altura</h2>
+        </div>
+        <p>
+          O Grupo CCL Manutenções atua há 8 anos na locação e manutenção de plataformas elevatórias,
+          garantindo segurança, eficiência e suporte técnico especializado para cada operação.
+          Ao longo dessa trajetória, já contribuímos com a segurança de mais de 100 clientes em
+          plataformas elevatórias, sempre com foco em disponibilidade, agilidade no atendimento e
+          excelência no acompanhamento técnico.
+        </p>
+      </div>
+    </section>
+
+    <!-- Cards com os serviços principais -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Serviços</span>
+          <h2>Atendimento completo para locação e manutenção</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Locação de plataformas elevatórias</h3>
+            <p>Equipamentos para diferentes demandas operacionais com entrega rápida e orientação técnica.</p>
+          </article>
+          <article class="service-card">
+            <h3>Manutenção preventiva</h3>
+            <p>Planos de inspeção e revisão para ampliar a vida útil dos equipamentos e reduzir paradas.</p>
+          </article>
+          <article class="service-card">
+            <h3>Manutenção corretiva</h3>
+            <p>Diagnóstico ágil e reparos eficientes para restabelecer o funcionamento com segurança.</p>
+          </article>
+          <article class="service-card">
+            <h3>Suporte técnico especializado</h3>
+            <p>Equipe preparada para orientar operações, solucionar dúvidas e acompanhar necessidades técnicas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria de equipamentos -->
+    <section class="section equipment" id="equipamentos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Equipamentos</span>
+          <h2>Modelos ideais para diferentes alturas e ambientes</h2>
+        </div>
+
+        <div class="equipment-grid">
+          <article class="equipment-card">
+            <img src="images/plataforma-tesoura-ccl.png" alt="Plataforma tesoura CCL">
+            <div class="equipment-card__body">
+              <h3>Plataforma tesoura</h3>
+              <p>Indicada para elevação vertical estável em áreas internas e pisos nivelados.</p>
+              <div class="equipment-note">
+                <strong>Tamanhos disponíveis</strong>
+                <span>A empresa possui plataformas tesoura de 8m e 12m.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="equipment-card">
+            <img src="images/plataforma-articulada-jlg.png" alt="Plataforma articulada JLG">
+            <div class="equipment-card__body">
+              <h3>Plataforma articulada</h3>
+              <p>Excelente para superar obstáculos e alcançar pontos de difícil acesso com precisão.</p>
+              <div class="equipment-note">
+                <strong>Altura disponível</strong>
+                <span>A empresa possui plataforma articulada de 15m.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="equipment-card">
+            <img src="images/maintenance-parts.svg" alt="Peças para manutenção de plataformas elevatórias">
+            <div class="equipment-card__body">
+              <h3>Peças para manutenção</h3>
+              <p>Baterias, carregadores, comandos e componentes essenciais para manter a operação com segurança.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco dedicado à manutenção -->
+    <section class="section maintenance" id="manutencao">
+      <div class="container maintenance__grid">
+        <div class="maintenance__panel">
+          <span class="section-tag">Manutenção</span>
+          <h2>Prevenção, correção e continuidade operacional</h2>
+          <p>
+            Nossa equipe técnica executa inspeções, ajustes, testes e reparos com foco em segurança,
+            desempenho e disponibilidade. Atuamos para reduzir falhas inesperadas e manter os equipamentos
+            prontos para a operação diária.
+          </p>
+        </div>
+        <div class="maintenance__list">
+          <div class="maintenance-item">
+            <strong>Inspeções programadas</strong>
+            <span>Rotinas preventivas para evitar falhas e ampliar a confiabilidade.</span>
+          </div>
+          <div class="maintenance-item">
+            <strong>Atendimento corretivo rápido</strong>
+            <span>Suporte ágil para restabelecer operações com menor tempo de parada.</span>
+          </div>
+          <div class="maintenance-item">
+            <strong>Equipe técnica qualificada</strong>
+            <span>Profissionais preparados para diferentes modelos e cenários operacionais.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de contato com formulário -->
+    <section class="section contact" id="contato">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <span class="section-tag">Contato</span>
+          <h2>Fale com o Grupo CCL Manutenções</h2>
+          <p>Solicite um orçamento, tire dúvidas sobre locação ou peça suporte técnico para sua operação.</p>
+
+          <div class="contact-list">
+            <a href="tel:+5535999383014">Telefone: (35) 99938-3014</a>
+            <a href="mailto:cclmanutencoes@outlook.com">E-mail: cclmanutencoes@outlook.com</a>
+            <a class="btn btn--whatsapp" href="https://wa.me/5535999383014" target="_blank" rel="noopener noreferrer">
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@empresa.com" required>
+
+          <label for="phone">Telefone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(35) 99938-3014">
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Conte como podemos ajudar" required></textarea>
+
+          <button type="submit" class="btn btn--primary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé com informações resumidas -->
+  <footer class="site-footer">
+    <div class="container site-footer__content">
+      <div>
+        <strong>Grupo CCL Manutenções</strong>
+        <p>&copy; 2026. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="site-footer__links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="mailto:cclmanutencoes@outlook.com">cclmanutencoes@outlook.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
