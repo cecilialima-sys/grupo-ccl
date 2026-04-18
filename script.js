@@ -121,7 +121,7 @@ if (liftTrack && miniLift && mainNav) {
   });
 }
 
-// Direciona o formulario para a composicao do Outlook com os dados preenchidos.
+// Direciona o formulario para o WhatsApp da empresa com os dados preenchidos.
 const contactForm = document.querySelector(".contact-form");
 
 if (contactForm) {
@@ -133,16 +133,17 @@ if (contactForm) {
     const email = String(formData.get("email") || "").trim();
     const phone = String(formData.get("phone") || "").trim();
     const message = String(formData.get("message") || "").trim();
-    const subject = encodeURIComponent(`Contato pelo site - ${name || "Novo contato"}`);
-    const body = encodeURIComponent(
+    const whatsappMessage = encodeURIComponent(
+      `Olá, CCL Manutenções!\n\n` +
+      `Estou entrando em contato pelo site.\n\n` +
       `Nome: ${name}\n` +
       `E-mail: ${email}\n` +
       `Telefone: ${phone}\n\n` +
-      `Mensagem:\n${message}`
+      `Problema/solicitação:\n${message}`
     );
 
     window.open(
-      `https://outlook.office.com/mail/deeplink/compose?to=cclmanutencoes@outlook.com&subject=${subject}&body=${body}`,
+      `https://wa.me/5535999383014?text=${whatsappMessage}`,
       "_blank",
       "noopener,noreferrer"
     );
